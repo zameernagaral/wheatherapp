@@ -1,0 +1,111 @@
+/* Color Palette:
+   Primary: #4A90E2 (Blue)
+   Secondary: #50E3C2 (Teal)
+   Accent: #F5A623 (Orange)
+   Background: #F4F7F9 (Light Gray)
+   Text: #333333 (Dark Gray)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F7F9;
+    /* Light Gray Background */
+    color: #333333;
+    /* Dark Gray Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    /* White Background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle Shadow */
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    gap: 20px;
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #4A90E2;
+    /* Primary Blue */
+}
+
+
+.container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.container input:focus {
+    outline: none;
+    border-color: #50E3C2;
+    /* Secondary Teal */
+}
+
+.container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4A90E2;
+    /* Primary Blue */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.container button:hover {
+    background-color: #50E3C2;
+    /* Secondary Teal */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+#weatherResult {
+    background-color: #F4F7F9;
+    /* Light Gray */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle Shadow */
+    width: 100%;
+}
+
+#weatherResult h2 {
+    color: #F5A623;
+    /* Accent Orange */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#weatherResult p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333333;
+    /* Dark Gray */
+}
